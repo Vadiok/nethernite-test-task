@@ -91,7 +91,6 @@ export default {
       return this.$store.getters[StoreNames.INFO_ITEM];
     },
     keywords() {
-      console.log(this.item);
       return this.item ? this.item.keywords : [];
     },
     hasKeywords() {
