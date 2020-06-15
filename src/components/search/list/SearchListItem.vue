@@ -3,6 +3,7 @@ v-hover
   template(v-slot:default="{ hover }")
     v-card.mb-3(
       :loading="isLoading"
+      @click.native="viewDetails"
     )
       v-card-title {{ packageInfo.name }}
       v-card-text

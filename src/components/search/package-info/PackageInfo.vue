@@ -19,7 +19,7 @@ v-dialog(
         v-col(
           cols="9"
         )
-          v-btn.text-lowercase(
+          v-btn.text-lowercase.text-wrap(
             v-if="item.repository"
             small
             depressed
