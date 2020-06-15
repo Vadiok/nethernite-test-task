@@ -1,8 +1,13 @@
-# test-task-nethernite
+# Nethernite Test Task
 
 ## Project setup
 ```
 yarn install
+```
+
+## Run
+```
+yarn start
 ```
 
 ### Compiles and hot-reloads for development

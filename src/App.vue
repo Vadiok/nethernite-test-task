@@ -1,28 +1,31 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+v-app
+  TheAppHeader
+  v-main
+    v-container.content-max-width
+      SearchList
+      PackageInfo
+  TheAppFooter
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TheAppHeader from './components/layout/TheAppHeader.vue';
+import SearchList from './components/search/list/SearchList.vue';
+import TheAppFooter from './components/layout/TheAppFooter.vue';
+import PackageInfo from './components/search/package-info/PackageInfo.vue';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld,
+    PackageInfo,
+    TheAppFooter,
+    SearchList,
+    TheAppHeader,
   },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
